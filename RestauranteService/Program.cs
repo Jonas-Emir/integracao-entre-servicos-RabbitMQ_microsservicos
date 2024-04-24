@@ -18,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionSt
 
 builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
 
+builder.Services.AddSingleton<IRabbitMqClient, RabbitMqClient>();
+
 builder.Services.AddHttpClient<IItemServiceHttpClient, ItemSeviceHttpClient>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

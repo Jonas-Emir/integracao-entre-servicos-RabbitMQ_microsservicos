@@ -54,7 +54,9 @@ public class RestauranteController : ControllerBase
 
         var restauranteReadDto = _mapper.Map<RestauranteReadDto>(restaurante);
 
-        _itemServiceHttpClient.EnviaRestauranteParaItemService(restauranteReadDto);
+        //_itemServiceHttpClient.EnviaRestauranteParaItemService(restauranteReadDto);
+
+        _rabbitMqClient.PublicaRestaurante(RestauranteReadDto);
 
         return CreatedAtRoute(nameof(GetRestauranteById), new { restauranteReadDto.Id },
             restauranteReadDto);
