@@ -15,6 +15,12 @@ namespace ItemService.Models
         [Required]
         public string Nome { get; set; }
 
+        [Required]
+        public string Endereco { get; set; }
+
+        [Required]
+        public string Site { get; set; }
+
         public ICollection<Item> Itens { get; set; } = new List<Item>();
     }
 }
