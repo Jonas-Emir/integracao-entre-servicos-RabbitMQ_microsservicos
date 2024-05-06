@@ -3,6 +3,10 @@
 Este projeto é realizado a integração entre o ItemService e o RestauranteService utilizando RabbitMQ como o serviço de mensageria para a comunicação assíncrona entre os serviços.
 Foi desenvolvido com o framework .NET Core e realizada a criação de images para a utilização em containers com Docker.
 
+O RabbitMQ é um agente de mensagens de código aberto que usa o AMQP (Advanced Message Queuing Protocol) para permitir a comunicação e o compartilhamento de dados entre aplicativos de software. Atua como intermediário, permitindo a comunicação assíncrona em sistemas distribuídos, armazenando e entregando mensagens em filas.
+
+![Organograma RabbitMQ](https://github.com/Jonas-Emir/microsservicos_restauranteService/blob/ImplementacaoRabbitMQ/RabbitMQ.jfif?raw=true)
+
 ### RabbitMQ:
 ![RabbitMQ](https://github.com/Jonas-Emir/microsservicos_restauranteService/blob/ImplementacaoRabbitMQ/rabbit.PNG?raw=true)
 
